@@ -1,0 +1,3 @@
+TTY_DEVICE = '/dev/ttyUSB0'
+BAUD_RATE = 9600
+TIMEOUT = 1
