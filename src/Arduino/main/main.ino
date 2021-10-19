@@ -23,11 +23,8 @@ void loop() {
 
     if (Serial.available() > 0) {
         String input_data = Serial.readStringUntil('\n');
-        Serial.print("data received on arduino: ");
-        Serial.print(input_data);
     }
 
     digitalWrite(M1, LOW);
     analogWrite(E1, 250);
-    delay(100);
 }
