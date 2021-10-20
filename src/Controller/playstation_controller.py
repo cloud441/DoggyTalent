@@ -28,6 +28,7 @@ class PlaystationController(Controller):
         axis_forward = (self.joystick.get_axis(5) + 1) / 2
         axis_backward = -(self.joystick.get_axis(2) + 1) / 2
 
+        ''' return value between -1(backward) and 1(forward) '''
         return axis_forward + axis_backward
 
 
